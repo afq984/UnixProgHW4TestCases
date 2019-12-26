@@ -12,5 +12,6 @@ echo '#!/bin/sh
 echo "Content-Type: text/plain
 "
 printenv
+echo
 cat' > testcase/post.php
 chmod +x testcase/post.php
