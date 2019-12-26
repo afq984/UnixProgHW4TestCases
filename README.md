@@ -12,4 +12,4 @@
 ## Test
 
 1. Start the webserver and point the root directory to `testroot/`.
-2. Run `pytest --base-dir=http://localhost:3000` (replace 3000 with the actual port the server is binded to).
+2. Run `pytest --base-url=http://localhost:3000` (replace 3000 with the actual port the server is binded to).
