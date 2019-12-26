@@ -240,3 +240,10 @@ def test_POST_cgi_query_string():
     assert resp.status_code == 200
     assert 'REQUEST_METHOD=POST' in resp.text
     assert 'hello_WORLD' in resp.text
+
+
+def test_POST_cgi_empty_body():
+    resp = post('post.php?hello_WORLD', data='')
+    assert resp.status_code == 200
+    assert 'REQUEST_METHOD=POST' in resp.text
+    assert 'hello_WORLD' in resp.text
